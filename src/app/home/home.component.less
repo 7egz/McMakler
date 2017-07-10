@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-family: 'myriad pro';
+}
+@dark-gray:#3e3e3e;
+@light-gray:#b8b8b8;
+.boxes{
+    width:95%;
+    margin: 100px auto 0 auto;
+    .box{
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: 32%;
+        margin-bottom: 20px;
+        &:nth-of-type(3n+2){
+            margin:0 2%;
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+        .details{
+            padding: 20px 10%;
+            border: 2px solid @light-gray;
+            border-top: 0px;
+            display: inline-block;
+            h2{
+                color: @dark-gray;
+                font-size:18px;
+                line-height: 24px;
+            }
+            p{
+                color: @light-gray;
+                font-size: 16px;
+                &:nth-of-type(1){
+                    font-weight: bold;
+                }
+            }
+            .price_desc{
+                margin-top: 40px;
+                p{
+                    &:first-of-type{
+                        float: left;
+                        color: #1b1b1b;
+                    }
+                     &:last-of-type{
+                        float: right;
+                         color: #5b5b5b;
+                         span{
+                             color: @light-gray;
+                             display: inline-block;
+                             margin:0px 5px;
+                         }
+                    }
+                }
+            }
+        }
+        .overlay{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #fff;
+            color: @light-gray;
+            text-transform: capitalize;
+            font-weight: bold;
+            width: 100px;
+            padding:12px 0px 10px 0px;
+            text-align: center;
+            border-radius: 2px;
+            font-size: 17px;
+            margin: 0;
+            -webkit-box-shadow: 3px 3px 4px @light-gray;
+             box-shadow: 3px 3px 4px @light-gray;
+        }
+    }
+}
+@media(max-width: 992px){
+    .boxes{
+        .box{
+            .details{
+                padding: 0px 5%;
+                h2{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .boxes{
+        .box{
+        width: 100%;
+        margin: 0px 0px 20px 0px !important;
+        }
+    }
+}

@@ -1,24 +1,30 @@
-# Mcmakler
+1- # Mcmakler
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0 and to run the app you should:
 
-## Development server
+1-make sure you have the Angular CLI installed globally 
+2-then run npm install to resolve all dependencies
+3-run ng serve 
+4-Navigate to `http://localhost:4200/`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2- ###NOTE: 
 
-## Code scaffolding
+***i used both bootstrap and less to show off my skills, i used bootstrap in navbar and less in the rest of app also to write raw css.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+***i used angular to create the app because it make my work dynamic and arranged and the powerful of angular show when the app become more and more big, i create base structure of the website which is the start to build the rest of the website.
 
-## Build
+***you can run unit test or end to end app test =>>> read points number 4 and 5
+
+
+3- ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+4- ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+5- ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
