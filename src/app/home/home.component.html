@@ -1,19 +1,19 @@
 
 <div class="boxes">
-    <div class="box" *ngFor="let item of ads"> <!--ngFor to loop and show the data in sequence using item of ads  -->
-           <p class="overlay">{{item.type}}</p>
-           <img src="assets/images/{{item.image}}.jpg" alt="">  <!--all images of the app should be in folder assets -->
+    <div class="box" *ngFor="let item of ads | slice:0:10"> <!--ngFor to loop and show the data in sequence using item of ads  -->
+           <p class="overlay">{{item.metadata.size}}</p>
+           <img src="{{item.url}}" alt="">  <!--all images of the app should be in folder assets -->
       <div class="details">
 
-           <h2>{{item.detail}}</h2>
+           <h2>{{item.title}}</h2>
            <p>35764 sinn / Fleisbach</p>
 
            <div class="price_desc">
-               <p class="price">{{item.price}} &euro;</p>
-               <p>{{item.zimmer}} Zimmer <span> | </span> ab {{item.area}}m<sup>2</sup></p>
+               <p class="price">{{item.advertisementPrice.sellPrice}} &euro;</p>
+               <p>{{item.metadata.width}} Zimmer <span> | </span> ab {{item.metadata.width}}m<sup>2</sup></p>
            </div>
 
       </div> <!--details div ended -->
     </div> <!--box div ended -->
-      
+
 </div> <!--boxes div ended -->

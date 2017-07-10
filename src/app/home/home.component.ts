@@ -7,13 +7,14 @@ import {AdvertismentsService} from '../advertisments.service';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent implements OnInit {
-  
-  ads:any; 
+
+  ads:any;
 
   constructor(private advertiseService: AdvertismentsService) { }
 
   ngOnInit() {
-  		this.ads = this.advertiseService.getAll();
-  } <!--to make ads hold all data of advertisments -->
+  		this.advertiseService.getAll()
+        .subscribe(macklerApi => this.ads = macklerApi);
+  }
 
 }

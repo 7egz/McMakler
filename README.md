@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1-make sure you have the Angular CLI installed globally 
 2-then run npm install to resolve all dependencies
 3-run ng serve 
-4-Navigate to `http://localhost:4200/`
+4-Navigate to `http://localhost:4200/` 
 
 2- ###NOTE: 
 

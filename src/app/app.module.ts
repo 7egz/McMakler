@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {AdvertismentsService} from './advertisments.service';
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {AdvertismentsService} from './advertisments.service';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   providers: [AdvertismentsService],
   bootstrap: [AppComponent]
