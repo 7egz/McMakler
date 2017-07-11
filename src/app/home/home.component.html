@@ -1,6 +1,6 @@
 
 <div class="boxes">
-    <div class="box" *ngFor="let item of ads | slice:0:10"> <!--ngFor to loop and show the data in sequence using item of ads  -->
+    <div class="box" *ngFor="let item of ads | slice:0:10"> <!--ngFor to show the data in sequence using item of ads and pipe to filter only the first 10  -->
            <p class="overlay">{{item.metadata.size}}</p>
            <img src="{{item.url}}" alt="">  <!--all images of the app should be in folder assets -->
       <div class="details">
